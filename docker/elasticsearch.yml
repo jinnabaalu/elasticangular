@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+  elasticsearch1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
+    environment:
+      ES_JAVA_OPTS: '-Xms256m -Xmx256m'
+      cluster.name: es-cluster
+      node.name: es1
+      network.bind_host: 0.0.0.0
+      discovery.zen.minimum_master_nodes: 1
+      discovery.zen.ping.unicast.hosts: elasticsearch1
+      xpack.security.enabled: 'false'
+      xpack.monitoring.enabled: 'false'
+      xpack.watcher.enabled: 'false'
+      xpack.ml.enabled: 'false'
+      http.cors.enabled : 'true'
+      http.cors.allow-origin : "*"
+      http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
+      http.cors.allow-headers : X-Requested-With,X-Auth-Token,Content-Type, Content-Length
+      logger.level: debug
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+volumes:
+  esdata1:
+    driver: local
