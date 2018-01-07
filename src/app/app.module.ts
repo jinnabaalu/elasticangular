@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ConnectService } from './services/elasticsearch/connect.service';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

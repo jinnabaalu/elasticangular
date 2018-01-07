@@ -1,4 +1,4 @@
-# Elasticsearch with angular 5
+# Elasticsearch with Angular
 
 ## Up and run with ELasticsearch
 
@@ -87,3 +87,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 # Production with Docker
 
 - Comming.....
+
+
+# Packages required
+
+```bash
+npm install --save elasticsearch
+```
