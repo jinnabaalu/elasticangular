@@ -2,7 +2,7 @@
 
 ## Up and run with ELasticsearch
 
-1. (Installation and Get started guide from angular-cli)https://github.com/angular/angular-cli#installation
+1. [Installation and Get started guide from angular-cli](https://github.com/angular/angular-cli#installation)
 
 2. Create a docker-compose file to run the Elasticsearch as docker container or you can also install on your host machine.
 
@@ -52,13 +52,13 @@ NOTE : When you run elastic search you will face "Bootstrap checks failing" of "
 
 Follow this instructions to resolve your issue 
 
-(Elasticsearch - Bootstrap checks failing)[https://stackoverflow.com/questions/42300463/elasticsearch-5-x-bootstrap-checks-failing/47211716#47211716]
+[Elasticsearch - Bootstrap checks failing](https://stackoverflow.com/questions/42300463/elasticsearch-5-x-bootstrap-checks-failing/47211716#47211716)
 
 **OR**
 
 ### You can also install on host
 
-- (Installation)[https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html]
+- [Installation](https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html)
 
 - CORS need to be activated to connect to the elasticsearch from the application.
 
